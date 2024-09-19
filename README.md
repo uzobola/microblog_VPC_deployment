@@ -57,7 +57,7 @@ Question: What is the difference between running scripts with the source command
 
 IMPORTANT: Save these scripts in your GitHub Respository in a "scripts" folder.
 
-11. Create a Jenkinsfile that will build the application, run a pytest (you can re-use the test from WL3 or challenge yourself to create a new one), run the OWASP dependency checker, and then deploy the application by SSH'ing into the "Web_Server" to run "setup.sh" (which would then run "start_app.sh").
+11. Create a Jenkinsfile that will 'Build' the application, 'Test' the application by running a pytest (you can re-use the test from WL3 or challenge yourself to create a new one), run the OWASP dependency checker, and then "Deploy" the application by SSH'ing into the "Web_Server" to run "setup.sh" (which would then run "start_app.sh").
 
 IMPORTANT/QUESTION/HINT: How do you get the scripts onto their respective servers if they are saved in the GitHub Repo?  Do you SECURE COPY the file from one server to the next in the pipeline? Do you C-opy URL the file first as a setup? How much of this process is manual vs. automated?
 
