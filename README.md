@@ -55,7 +55,7 @@ b) a "setup.sh" script that will run in the "Web_Server" that will SSH into the 
 
 Question: What is the difference between running scripts with the source command and running the scripts either by changing the permissions or by using the 'bash' interpreter?
 
-IMPORTANT: Save these scripts in your GitHub Respository in a "scripts" folder"
+IMPORTANT: Save these scripts in your GitHub Respository in a "scripts" folder.
 
 11. Create a Jenkinsfile that will build the application, run a pytest (you can re-use the test from WL3 or challenge yourself to create a new one), run the OWASP dependency checker, and then deploy the application by SSH'ing into the "Web_Server" to run "setup.sh" (which would then run "start_app.sh").
 
@@ -63,7 +63,7 @@ IMPORTANT/QUESTION/HINT: How do you get the scripts onto their respective server
 
 Question 2: In WL3, a method of "keeping the process alive" after a Jenkins stage completed was necessary.  Is it in this Workload? Why or why not?
 
-12. Run the Jenkins Pipeline and check to see if the application can be accessed from the public IP address of the "Web_Server".
+12. Create a MultiBranch Pipeline and run the build. IMPORTANT: Make sure the name of the pipeline is: "workload_4".  Check to see if the application can be accessed from the public IP address of the "Web_Server".
 
 13. If all is well, create an EC2 t3.micro called "Monitoring" with Prometheus and Grafana and configure it so that it can collect metrics on the application server.
 
