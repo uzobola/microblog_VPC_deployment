@@ -4,7 +4,15 @@ pipeline {
         stage ('Build') {
             steps {
                 sh '''#!/bin/bash
-                <enter your code here>
+		# This  creates the python  virtual environment
+                python3.9 -m venv venv
+                
+		# This activates the python virtual environment
+		source venv/bin/activate
+
+		# This installs any dependencies
+                pip install pip --upgrade
+                pip install -r requirements.txt
                 '''
             }
         }
@@ -29,9 +37,9 @@ pipeline {
         }
       stage ('Deploy') {
             steps {
-                sh '''#!/bin/bash
-                <enter your code here>
-                '''
+		sshagent(credentials: ['web-server-ssh-key']) {
+ 		   sh "ssh -o StrictHostKeyChecking=no ubuntu@10.0.6.249 'source /home/ubuntu/setup.sh'"
+		} 
             }
         }
     }
