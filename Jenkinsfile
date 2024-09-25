@@ -19,8 +19,10 @@ pipeline {
         stage ('Test') {
             steps {
                 sh '''#!/bin/bash
-                source venv/bin/activate
-                py.test ./tests/unit/ --verbose --junit-xml test-reports/results.xml
+                #Sets the environment variable so that python knows where to look
+		export PYTHONPATH=$PYTHONPATH:$(pwd)
+		source venv/bin/activate
+                pytest ./tests/unit/ --verbose --junit-xml test-reports/results.xml
                 '''
             }
             post {
