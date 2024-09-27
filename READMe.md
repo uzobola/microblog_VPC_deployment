@@ -1,6 +1,7 @@
 
 
-![Copy of WorkLoad4NetworkDiagram](https://github.com/user-attachments/assets/1ab6fd38-043b-42c5-ac1e-035ac6862924)
+![Copy of WorkLoad4NetworkDiagramFinal](https://github.com/user-attachments/assets/5dc7921c-6b73-40ad-8657-585029367f65)
+
 
 
 ### PURPOSE
@@ -21,7 +22,7 @@ It aims to achieve the following objectives:
 ### Steps and Their Importance
 
 1. **Cloning the Repository**
-   - Cloning the `microblog_VPC_deployment` repository to GitHub ensures we have the most up to date application code and deployment scripts. It ensures that all changes are tracked and versions are managed appropriately as collaboration happens. 
+   - Cloning the `microblog_VPC_deployment` repository to GitHub ensures we have the most up-to-date application code and deployment scripts. It ensures that all changes are tracked and versions are managed appropriately as collaboration happens. 
      As the SCM, it also facilitates integration with automation tools in our CI/CD pipeline, e.g., Jenkins.
    - **Importance**: Version control enables collaboration and continuous integration, making it easier to automate deployment.
    
